@@ -43,8 +43,6 @@ npm install && npm start
 
 **Free deployment:** Render (backend) + Vercel (frontend) + MongoDB Atlas + NewsData.io = $0/month
 
-Guides: [QUICK_DEPLOY.md](QUICK_DEPLOY.md) | [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) | [PRODUCTION_READINESS.md](PRODUCTION_READINESS.md)
-
 ## 📚 Learn More
 
 For detailed explanations, tutorials, and learning resources, see [LEARN.md](LEARN.md)
