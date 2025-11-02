@@ -1,6 +1,6 @@
 # Quick Deployment Steps
 
-## 🚀 Deploy Backend to Render
+## 🚀 Deploy Backend to Render (Using Docker)
 
 1. **Create account**: https://render.com
 2. **New Web Service** → Connect GitHub repo
@@ -8,9 +8,8 @@
    - Name: `newsy-backend`
    - Branch: `main`
    - Root Directory: `.` (root)
-   - Environment: `Java 21`
-   - Build Command: `mvn clean install -DskipTests`
-   - Start Command: `java -jar target/newsy-0.0.1-SNAPSHOT.jar`
+   - Environment: `Docker`
+   - Dockerfile Path: `Dockerfile` (auto-detected)
 
 4. **Add Environment Variables**:
    ```
@@ -24,7 +23,7 @@
    FRONTEND_URL=http://localhost:4200
    ```
 
-5. **Deploy** → Wait for build (5-10 mins)
+5. **Deploy** → Wait for Docker build (5-10 mins)
 6. **Copy your Render URL** (e.g., `https://newsy-backend-xyz.onrender.com`)
 
 ---
@@ -74,4 +73,3 @@
 Your app is now deployed and accessible worldwide for **FREE**!
 
 **Share your URL**: `https://your-app.vercel.app`
-
