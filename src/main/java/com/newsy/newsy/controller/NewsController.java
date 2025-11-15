@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/news")
-@CrossOrigin(origins = {"${FRONTEND_URL:http://localhost:4200}", "https://*.vercel.app"})
+@CrossOrigin(origins = {"${FRONTEND_URL:http://localhost:4200}"})
 @Slf4j
 public class NewsController {
 

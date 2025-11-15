@@ -9,18 +9,19 @@ import { environment } from '../../environments/environment';
 })
 export class NewsService {
   private apiUrl = environment.apiUrl;
+  private base =  this.apiUrl + '/api/news';
 
   constructor(private http: HttpClient) { }
 
   getAllNews(): Observable<NewsResponse> {
-    return this.http.get<NewsResponse>(this.apiUrl);
+    return this.http.get<NewsResponse>(this.base);
   }
 
   getNewsByCategory(category: string): Observable<CategoryNewsResponse> {
-    return this.http.get<CategoryNewsResponse>(`${this.apiUrl}/${category}`);
+    return this.http.get<CategoryNewsResponse>(`${this.base}/${category}`);
   }
 
   fetchNews(): Observable<any> {
-    return this.http.post(`${this.apiUrl}/fetch`, {});
+    return this.http.post(`${this.base}/fetch`, {});
   }
 }

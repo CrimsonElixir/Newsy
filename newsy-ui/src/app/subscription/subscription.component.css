@@ -1,0 +1,185 @@
+/* ===========================
+   Dialog Container Adjustments
+   =========================== */
+:host ::ng-deep .mat-mdc-dialog-surface {
+  background: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border-radius: 16px !important;
+  box-shadow: var(--shadow-xl) !important;
+  padding: 0 !important;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+/* ===========================
+   Dialog Title
+   =========================== */
+h2[mat-dialog-title] {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 1.25rem 1.5rem;
+  text-align: center;
+  margin: 0;
+  color: var(--accent-primary);
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* ===========================
+   Dialog Body
+   =========================== */
+[mat-dialog-content] {
+  padding: 1.75rem 1.5rem !important;
+  background: var(--bg-secondary);
+}
+
+/* ===========================
+   Card Wrapper
+   =========================== */
+.subscription-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+/* ===========================
+   Form Elements
+   =========================== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  background: var(--bg-primary);
+  border-radius: 10px;
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+}
+
+input[type="email"]:focus {
+  border-color: var(--accent-primary);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(49, 130, 206, 0.25);
+}
+
+/* ===========================
+   Error Message
+   =========================== */
+.error {
+  font-size: 0.8rem;
+  color: var(--error);
+  margin-top: -0.5rem;
+}
+
+/* ===========================
+   Category Chips (Matches Home Page Style)
+   =========================== */
+/* =============================
+   Category Selectable Pills
+   ============================= */
+.category-list {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 0.35rem;
+}
+
+.chip {
+  padding: 0.55rem 1rem;
+  background: var(--bg-primary);
+  border: 2px solid var(--border-color);
+  color: var(--text-secondary);
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  user-select: none;
+  box-shadow: none;
+}
+
+/* Hover look (not selected) */
+.chip:hover {
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(49, 130, 206, 0.2);
+}
+
+/* =============================
+   SELECTED STATE
+   ============================= */
+.chip.selected {
+  background: var(--accent-primary);
+  color: white;
+  border-color: var(--accent-primary);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 14px rgba(49, 130, 206, 0.35);
+}
+
+/* Keep hover smooth when selected */
+.chip.selected:hover {
+  transform: translateY(-3px) scale(1.07);
+}
+
+/* ===========================
+   Submit Button
+   =========================== */
+button[type="submit"] {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  color: white;
+  box-shadow: var(--shadow-md);
+  transition: all 0.25s ease;
+  margin-top: 0.5rem;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-xl);
+}
+
+button[type="submit"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ===========================
+   Message Text
+   =========================== */
+p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  padding-top: 0.5rem;
+}
+
+/* ===========================
+   Mobile Responsiveness
+   =========================== */
+@media (max-width: 480px) {
+  h2[mat-dialog-title] {
+    font-size: 1.2rem;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+  }
+}

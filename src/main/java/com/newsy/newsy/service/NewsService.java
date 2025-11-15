@@ -252,4 +252,11 @@ public class NewsService {
         }
         return str.substring(0, 1).toUpperCase() + str.substring(1).toLowerCase();
     }
+
+    public List<News> fetchTopArticles(String cat, int i) {
+        return newsRepository.findTop5ByCategoryOrderByFetchedAtDescPublishedAtDesc(cat)
+                .stream()
+                .limit(i)
+                .collect(Collectors.toList());
+    }
 }

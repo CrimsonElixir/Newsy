@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h2 th:text="${title}">Top News</h2>
+<p>Hi,</p>
+<p>Here are the top picks for you:</p>
+<ul>
+    <li th:each="item : ${articles}">
+        <a th:href="${item.url}" th:text="${item.title}">Article title</a>
+        <div th:text="${item.summary}">Summary</div>
+    </li>
+</ul>
+<hr/>
+<p>
+    To unsubscribe, <a th:href="${unsubscribeUrl}">click here</a>.
+</p>
+<p style="font-size:small;color:gray">Sent by Newsy</p>
+</body>
+</html>

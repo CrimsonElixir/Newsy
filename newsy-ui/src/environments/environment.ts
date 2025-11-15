@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://newsy-yg5w.onrender.com/api/news'
+  apiUrl: 'https://newsy-yg5w.onrender.com'
 };

@@ -1,0 +1,38 @@
+<h2 mat-dialog-title>Subscribe</h2>
+
+<div mat-dialog-content>
+
+  <div class="subscription-card">
+
+    <form [formGroup]="form" (ngSubmit)="submit()">
+      <label>Email</label>
+      <input type="email" formControlName="email" />
+      <div *ngIf="form.get('email')?.invalid && form.get('email')?.touched" class="error">
+        Enter a valid email.
+      </div>
+
+      <label>Categories</label>
+
+      <div class="category-list">
+        <div
+          class="chip"
+          *ngFor="let c of categories"
+          [class.selected]="isSelected(c)"
+          (click)="toggleCategory(c)"
+        >
+          {{ c | titlecase }}
+        </div>
+      </div>
+
+
+      <div *ngIf="form.get('categories')?.invalid && form.get('categories')?.touched" class="error">
+        Select at least one.
+      </div>
+
+      <button type="submit" [disabled]="submitting || form.invalid">Subscribe</button>
+    </form>
+
+    <p *ngIf="message">{{ message }}</p>
+  </div>
+
+</div>
