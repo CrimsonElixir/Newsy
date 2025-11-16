@@ -10,7 +10,7 @@ A modern news aggregator with Spring Boot backend and Angular frontend that fetc
 - REST API endpoints for news retrieval
 
 ## 📸 Snapshot
-![](snapshot.png)
+![](Snapshot.png)
 
 ## 🛠️ Tech Stack
 
