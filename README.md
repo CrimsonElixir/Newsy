@@ -1,4 +1,4 @@
-# Newsy - Full Stack News Aggregator
+# Newsy 📰
 
 A modern news aggregator with Spring Boot backend and Angular frontend that fetches news from NewsData.io API, displays on UI and also delivers newsletters to email subscribers.
 
@@ -18,7 +18,7 @@ A modern news aggregator with Spring Boot backend and Angular frontend that fetc
 **Backend:** Java 21, Spring Boot 3.5.7, MongoDB Atlas, Maven  
 **Frontend:** Angular 17, TypeScript, RxJS
 
-## 📰 Newsletter
+## 🔔 Newsletter
 
 This project includes a simple newsletter subscription system:
 
