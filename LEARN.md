@@ -11,41 +11,16 @@ This project is a **news aggregator** application that demonstrates full-stack d
 ### Backend Technologies
 
 #### 1. **Java 21**
-- Modern programming language for building robust applications
-- **Learn**: [Java Tutorial](https://docs.oracle.com/javase/tutorial/)
-- **Used for**: All backend logic and business rules
-
 #### 2. **Spring Boot**
-- Framework that simplifies Java application development
-- **Learn**: [Spring Boot Guides](https://spring.io/guides)
-- **Used for**: REST API, dependency injection, scheduling
-
 #### 3. **MongoDB**
-- NoSQL database for storing news articles
-- **Learn**: [MongoDB University](https://learn.mongodb.com/)
-- **Used for**: Persistent data storage with flexible schema
-
 #### 4. **Maven**
-- Build automation and dependency management tool
-- **Learn**: [Maven Getting Started](https://maven.apache.org/guides/getting-started/)
-- **Used for**: Managing Java dependencies and building the project
 
 ### Frontend Technologies
 
 #### 1. **Angular**
-- Framework for building single-page applications
-- **Learn**: [Angular Tutorial](https://angular.io/tutorial)
-- **Used for**: User interface and client-side logic
-
 #### 2. **TypeScript**
-- Typed superset of JavaScript
-- **Learn**: [TypeScript Handbook](https://www.typescriptlang.org/docs/)
-- **Used for**: Type-safe frontend code
-
 #### 3. **RxJS**
-- Library for reactive programming with observables
-- **Learn**: [RxJS Guide](https://rxjs.dev/guide/overview)
-- **Used for**: Handling async operations and API calls
+
 
 ## 🔑 Key Concepts to Understand
 
@@ -74,6 +49,12 @@ Keep sensitive data secure and configurations flexible.
 Make web applications work on all screen sizes.
 - 4-column grid layout
 - **Learn**: CSS Grid, Flexbox
+
+### 6. **Email Subscription**
+- SMTP vs provider API: understand the trade-offs involved.
+- STARTTLS vs SMTPS: explicit STARTTLS (port 587) upgrades a plain connection to TLS; SMTPS (port 465) starts with TLS.
+- Verification workflow: how verification tokens and confirmation links work to mark subscribers as verified before sending mail.
+- For more details, see [EMAIL.md](EMAIL.md)
 
 ## 🛠️ Development Skills
 
@@ -109,10 +90,11 @@ Make web applications work on all screen sizes.
 
 ### Advanced
 1. Implement new features (e.g., search, bookmarks)
-2. Add authentication and user accounts
-3. Optimize performance and caching
-4. Set up CI/CD pipelines
-5. Add comprehensive testing
+2. Enhance Email Templates
+3. Add authentication and user accounts
+4. Optimize performance and caching
+5. Set up CI/CD pipelines
+6. Add comprehensive testing
 
 ## 🚀 Hands-On Practice
 
@@ -127,12 +109,13 @@ Make web applications work on all screen sizes.
 - [ ] Implement pagination
 - [ ] Add article bookmarking
 - [ ] Create a filter by date
+- [ ] Enhance UX by confirmation messages (SnackBar/Dialog)
 
 ### Advanced Tasks
 - [ ] Add user authentication
-- [ ] Implement real-time updates with WebSockets
 - [ ] Add article recommendations
 - [ ] Create a mobile app version
+- [ ] Build provider-API solution for email
 
 ## 📝 Best Practices You'll Learn
 
